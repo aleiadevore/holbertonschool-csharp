@@ -1,0 +1,15 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/0-print_array.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/0-print_array.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/0-print_array.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/0-print_array.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/ref/0-print_array.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/bin/Debug/net5.0/0-print_array.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/ref/0-print_array.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x02-csharp-arrays_lists_dictionaries/0-print_array/obj/Debug/net5.0/0-print_array.genruntimeconfig.cache
