@@ -1,0 +1,11 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.csprojAssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/bin/Debug/netcoreapp2.1/9-linkedlist_pop.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/bin/Debug/netcoreapp2.1/9-linkedlist_pop.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/bin/Debug/netcoreapp2.1/9-linkedlist_pop.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/bin/Debug/netcoreapp2.1/9-linkedlist_pop.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/bin/Debug/netcoreapp2.1/9-linkedlist_pop.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x03-csharp-hashset_stack_queue_linkedlist/9-linkedlist_pop/obj/Debug/netcoreapp2.1/9-linkedlist_pop.pdb
