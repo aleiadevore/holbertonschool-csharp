@@ -16,18 +16,15 @@ class LList
             myLList.RemoveLast();
         else
         {
-            int n = 0;
             for (current = myLList.First; current != null; current = current.Next)
             {
                 if (i == index)
                 {
-                    n = current.Value;
+                    myLList.Remove(current);
                     break;
                 }
                 i++;
             }
-            if (n != 0)
-                myLList.Remove(n);
         }
     }
 }
