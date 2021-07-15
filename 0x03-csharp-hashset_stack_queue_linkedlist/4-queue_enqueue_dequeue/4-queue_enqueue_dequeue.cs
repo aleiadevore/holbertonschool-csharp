@@ -7,17 +7,17 @@ class MyQueue
     {
     Boolean check = aQueue.Contains(search);
 
-        // Number of elements in stack
+        // Number of elements in Queue
         Console.WriteLine("Number of items: {0}", aQueue.Count);
 
-        // Prints top of stack
+        // Prints top of Queue
         if (aQueue.Count > 0)
             Console.WriteLine("First item: {0}", aQueue.Peek());
         else
-            Console.WriteLine("Stack is empty");
+            Console.WriteLine("Queue is empty");
         
         // Prints if contains search item search
-        Console.WriteLine("Stack contains \"{0}\": {1}", search, check);
+        Console.WriteLine("Queue contains \"{0}\": {1}", search, check);
 
         // If aQueue contains the given item search, remove all items up to and including search;
         // otherwise, leave aQueue as is
