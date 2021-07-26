@@ -1,0 +1,11 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/bin/Debug/netcoreapp2.1/4-throw_exception_msg.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.csprojAssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x04-csharp-exceptions/4-throw_exception_msg/obj/Debug/netcoreapp2.1/4-throw_exception_msg.pdb
