@@ -1,0 +1,12 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/bin/Debug/netcoreapp2.1/1-enemy.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.csprojAssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x06-csharp-classes/1-enemy/obj/Debug/netcoreapp2.1/1-enemy.pdb

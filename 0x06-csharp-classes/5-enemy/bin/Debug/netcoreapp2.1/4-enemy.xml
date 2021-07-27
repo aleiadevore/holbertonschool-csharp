@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>4-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>This class creates a Zombie and sets its health to 0.</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor">
+            <summary>Constructs new zombie with health of 0</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>Sets value of health. If value is less than 0, an error is thrown.</summary>
+        </member>
+        <member name="P:Enemies.Zombie.Name">
+            <summary>Gets and sets the value of private field name</summary>
+        </member>
+        <member name="M:Enemies.Zombie.GetHealth">
+            <summary>Gets value of Zombie health</summary> 
+        </member>
+    </members>
+</doc>

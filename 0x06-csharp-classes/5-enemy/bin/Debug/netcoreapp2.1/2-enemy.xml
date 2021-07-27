@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>2-enemy</name>
+    </assembly>
+    <members>
+        <member name="T:Enemies.Zombie">
+            <summary>This class creates a Zombie and sets its health to 0.</summary>
+        </member>
+        <member name="F:Enemies.Zombie.health">
+            <summary>Creates public health field</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor">
+            <summary>Constructs new zombie with health of 0</summary>
+        </member>
+        <member name="M:Enemies.Zombie.#ctor(System.Int32)">
+            <summary>Sets value of health. If value is less than 0, an error is thrown.</summary>
+        </member>
+    </members>
+</doc>
