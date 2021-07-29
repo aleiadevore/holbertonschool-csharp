@@ -8,12 +8,13 @@ namespace MyMath
         ///<summary>Divides all elements of a matrix</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
+            if (matrix == null)
+                return null;
+
             int[,] newMatrix = matrix;
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
 
-            if (matrix == null)
-                return null;
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)
