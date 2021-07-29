@@ -1,0 +1,10 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.csprojAssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/bin/Debug/netstandard2.0/Text.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/bin/Debug/netstandard2.0/Text.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/bin/Debug/netstandard2.0/Text.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/bin/Debug/netstandard2.0/Text.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x07-csharp-tdd/4-unique/Text/obj/Debug/netstandard2.0/Text.pdb
