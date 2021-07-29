@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Tests
+namespace MyMath.Tests
 {
     [TestFixture]
     ///<summary>Tests add function</summary>
