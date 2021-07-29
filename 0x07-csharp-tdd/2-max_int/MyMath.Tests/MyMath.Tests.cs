@@ -24,7 +24,7 @@ namespace MyMath.Tests
         ///<summary>Tests empty list</summary>
         public void EmptyList()
         {
-            Assert.IsTrue(Operations.Max(null) == -1);
+            Assert.IsTrue(Operations.Max(null) == 0);
         }
 
         [Test]
