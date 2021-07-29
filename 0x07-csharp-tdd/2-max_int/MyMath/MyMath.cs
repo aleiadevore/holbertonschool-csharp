@@ -11,7 +11,6 @@ namespace MyMath
         {
             if (nums == null || nums.Count < 1)
         {
-            Console.WriteLine("List is empty");
             return 0;
         }
 
