@@ -8,23 +8,28 @@ namespace MyMath
         ///<summary>Divides all elements of a matrix</summary>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            int[,] newMatrix = new int[,];
+            int[,] newMatrix = matrix;
+            int rows = matrix.GetLength(0);
+            int cols = matrix.GetLength(1);
 
             if (matrix == null)
                 return null;
-            foreach (int i in matrix)
+            for (int i = 0; i < rows; i++)
             {
-                try
+                for (int j = 0; j < cols; j++)
                 {
-                    newMatrix.Add(i / number);
-                }
-                catch (DivideByZeroException)
-                {
-                    Console.WriteLine("Num cannot be 0");
-                    return null;
+                    try
+                    {
+                        newMatrix[i, j] /= num;
+                    }
+                    catch (DivideByZeroException)
+                    {
+                        Console.WriteLine("Num cannot be 0");
+                        return null;
+                    }
                 }
             }
-            
+            return newMatrix;
         }
     }
 }
