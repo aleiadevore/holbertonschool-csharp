@@ -13,8 +13,12 @@ namespace Text
                 return true;
             }
             
-            // Remove spaces
+            // Remove spaces and punctuation
             s = s.Replace(" ", "");
+            s = s.Replace(".", "");
+            s = s.Replace("!", "");
+            s = s.Replace(":", "");
+            s = s.Replace(",", "");
             s = s.ToLower();
 
             // Convert to array in order to reverse
