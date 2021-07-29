@@ -3,7 +3,7 @@
 namespace MyMath
 {
     ///<summary>Creates class of operations</summary>
-    public class Operations
+    public class Matrix
     {
         ///<summary>Divides all elements of a matrix</summary>
         public static int[,] Divide(int[,] matrix, int num)
