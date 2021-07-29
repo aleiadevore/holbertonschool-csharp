@@ -36,5 +36,12 @@ namespace Text.Tests
         {
             Assert.IsFalse(Str.IsPalindrome("Holberton"));
         }
+
+        [Test]
+        ///<summary>Returns true for palindrome with punctuation</summary>
+        public void Comma()
+        {
+            Assert.IsTrue(Str.IsPalindrome("Taco, cat"));
+        }
     }
 }
