@@ -11,17 +11,20 @@ namespace Text
         ///<summary>Chacks for first instance of unique character in string</summary>
         public static int UniqueChar(string s)
         {
-            /// use Disctinct to find unique instances
-            List<char> sList = new List<char>();
-            sList.AddRange(s);
+            Dictionary<char, int> charCount = new Dictionary<char, int>();
 
-            HashSet<char> sHash = new HashSet<char>(sList);
+            foreach (char c in s)
+            {
+                if (charCount.ContainsKey(c))
+                    charCount[c] += 1;
+                else
+                    charCount.Add(c, 1);
+            }
 
-            /// find first instance of new str in old str
             int i = 0;
             foreach (char c in s)
             {
-                if (c == sHash.First())
+                if (charCount[c] == 1)
                     return i;
                 i++;
             }
