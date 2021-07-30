@@ -22,6 +22,14 @@ namespace Text.Tests
         }
 
         [Test]
+        ///<summary>Testing two words</summary>
+        public void Test2()
+        {
+            Console.WriteLine(Str.CamelCase("twoWords"));
+            Assert.IsTrue(Str.CamelCase("twoWords") == 2);
+        }
+
+        [Test]
         ///<summary>Testing five words</summary>
         public void Test5()
         {
