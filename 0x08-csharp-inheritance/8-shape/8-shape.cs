@@ -65,7 +65,7 @@ class Square : Rectangle
        get => size;
        set {
             if (value < 0)
-                throw new ArgumentException("Height must be greater than or equal to 0");
+                throw new ArgumentException("Size must be greater than or equal to 0");
             else
             {
                 Height = value;
