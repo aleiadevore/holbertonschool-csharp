@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>2-subclass</name>
+    </assembly>
+    <members>
+        <member name="M:Obj.IsOnlyASubclass(System.Type,System.Type)">
+            <summary>returns True if the object is an instance of a class that inherits from the specified class, otherwise return False</summary>
+        </member>
+    </members>
+</doc>
