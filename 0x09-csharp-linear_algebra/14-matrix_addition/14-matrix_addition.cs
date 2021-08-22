@@ -12,9 +12,9 @@ class MatrixMath
         int m2Height = matrix2.GetLength(0);
 
         if (m1Width != m2Width || m1Height != m2Height)
-            return new double[,] {{-1},{-1}};
+            return new double[,] {{-1}};
         if (m1Height < 2 || m1Height > 3)
-            return new double[,] {{-1},{-1}};
+            return new double[,] {{-1}};
 
 
         double[,] ans = new double[m1Height, m1Width];
