@@ -28,7 +28,7 @@ class MatrixMath
                 //filling in a1
                 for (int j = 0; j < width; j++)
                     a1[j] = matrix1[i, j];
-                for (int j = 0; j < width; j++)
+                for (int j = 0; j < m2w; j++)
                 {
                     // filling in a2
                     for (int k = 0; k < m2h; k++)
