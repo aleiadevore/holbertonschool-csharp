@@ -10,6 +10,8 @@ class MatrixMath
 
         if (Height < 2 || Height > 3)
             return new double[,] {{-1}};
+        if (Width < 2 || Width > 3)
+            return new double[,] {{-1}};
 
         double[,] ans = new double[Height, Width];
 
