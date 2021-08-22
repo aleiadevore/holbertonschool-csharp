@@ -30,10 +30,15 @@ class MatrixMath
                     // filling in a2
                     for (int k = 0; k < height; k++)
                         a2[k] = matrix2[k, j];
-                    if (a1.Length != a2.Length)
+                    try
+                    {
+                        double n = DotProduct(a1, a2);
+                        ans[i, j] = n;
+                    }
+                    catch(InvalidOperationException)
+                    {
                         return new double[,] {{-1}};
-                    double n = DotProduct(a1, a2);
-                    ans[i, j] = n;
+                    }
                 }
             }
         return ans;
@@ -42,10 +47,8 @@ class MatrixMath
     ///<summary>Returns dot product of two vectors</summary>///
     public static double DotProduct(double[] vector1, double[] vector2)
     {
-        if (vector1.Length > 3 || vector1.Length < 2)
-            return -1;
         if (vector1.Length != vector2.Length)
-            return -1;
+            throw new InvalidOperationException("Wrong length");
 
         double ans = 0;
 
