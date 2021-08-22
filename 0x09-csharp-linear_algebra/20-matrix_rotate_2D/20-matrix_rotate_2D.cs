@@ -12,12 +12,12 @@ class MatrixMath
             return new double[,] {{-1}};
 
         double[,] deg = new double[2, 2];
-        //double[,] ans = new double[2, 2];
+        //double[,] deg = new double[2, 2];
 
-        deg[0, 0] = Math.Round(Math.Cos(angle), 2);
-        deg[1, 1] = Math.Round(Math.Cos(angle) * -1, 2);
-        deg[0, 1] = Math.Round(Math. Sin(angle), 2);
-        deg[1, 0] = Math.Round(Math. Sin(angle) * -1, 2);
+        deg[0, 0] = Math.Cos(angle);
+        deg[1, 1] = Math.Cos(angle);
+        deg[1, 0] = Math.Sin(angle);
+        deg[0, 1] = Math.Sin(angle) * -1;
 
         return Multiply(matrix, deg);
     }
@@ -40,8 +40,8 @@ class MatrixMath
         // creating empty array for matrix2 columns
         double[] a2 = new double[m2h];
 
-        // creating answer array
-        double[,] ans = new double[height, m2w];
+        // creating degwer array
+        double[,] deg = new double[height, m2w];
 
         for (int i = 0; i < height; i++)
             {
@@ -56,7 +56,7 @@ class MatrixMath
                     try
                     {
                         double n = DotProduct(a1, a2);
-                        ans[i, j] = n;
+                        deg[i, j] = n;
                     }
                     catch(InvalidOperationException)
                     {
@@ -64,7 +64,7 @@ class MatrixMath
                     }
                 }
             }
-        return ans;
+        return deg;
     }
 
     ///<summary>Returns dot product of two vectors</summary>///
@@ -73,11 +73,11 @@ class MatrixMath
         if (vector1.Length != vector2.Length)
             throw new InvalidOperationException("Wrong length");
 
-        double ans = 0;
+        double deg = 0;
 
         for (int i = 0; i < vector1.Length; i++)
-            ans += vector1[i] * vector2[i];
+            deg += vector1[i] * vector2[i];
 
-        return ans;
+        return Math.Round(deg, 2);
     }
 }
