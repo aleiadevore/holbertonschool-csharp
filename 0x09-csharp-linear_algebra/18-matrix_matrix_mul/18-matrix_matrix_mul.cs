@@ -8,9 +8,6 @@ class MatrixMath
         int height = matrix1.GetLength(0);
         int width = matrix1.GetLength(1);
 
-        if (height < 2 || height > 3)
-            return new double[,] {{-1}};
-
         // make array of row in matrix1
         // make array of column in matrix2
         // send to DotProduct
@@ -34,7 +31,7 @@ class MatrixMath
                     for (int k = 0; k < height; k++)
                         a2[k] = matrix2[k, j];
                     if (a1.Length != a2.Length)
-                        return -1;
+                        return new double[,] {{-1}};
                     double n = DotProduct(a1, a2);
                     ans[i, j] = n;
                 }
