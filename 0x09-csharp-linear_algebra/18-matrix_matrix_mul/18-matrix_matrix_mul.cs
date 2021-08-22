@@ -33,6 +33,8 @@ class MatrixMath
                     // filling in a2
                     for (int k = 0; k < height; k++)
                         a2[k] = matrix2[k, j];
+                    if (a1.Length != a2.Length)
+                        return -1;
                     double n = DotProduct(a1, a2);
                     ans[i, j] = n;
                 }
