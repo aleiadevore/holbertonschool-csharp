@@ -16,7 +16,7 @@ class MatrixMath
         for (int i = 0; i < Height; i++)
         {
             for (int j = 0; j < Width; j++)
-                ans[i, j] = vector[i, j] * scalar;
+                ans[i, j] = matrix[i, j] * scalar;
         }
 
         return ans;
