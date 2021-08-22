@@ -16,8 +16,8 @@ class MatrixMath
 
         deg[0, 0] = Math.Cos(angle);
         deg[1, 1] = Math.Cos(angle);
-        deg[1, 0] = Math.Sin(angle);
-        deg[0, 1] = Math.Sin(angle) * -1;
+        deg[1, 0] = Math.Sin(angle) * -1;
+        deg[0, 1] = Math.Sin(angle);
 
         return Multiply(matrix, deg);
     }
