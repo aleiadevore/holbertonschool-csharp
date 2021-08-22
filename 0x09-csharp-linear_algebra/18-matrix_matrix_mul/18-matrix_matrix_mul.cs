@@ -8,6 +8,9 @@ class MatrixMath
         int height = matrix1.GetLength(0);
         int width = matrix1.GetLength(1);
 
+        int m2h = matrix2.GetLength(0);
+        int m2w = matrix2.GetLength(1);
+
         // make array of row in matrix1
         // make array of column in matrix2
         // send to DotProduct
@@ -15,10 +18,10 @@ class MatrixMath
         // creating empty array for matrix1 rows
         double[] a1 = new double[width];
         // creating empty array for matrix2 columns
-        double[] a2 = new double[height];
+        double[] a2 = new double[m2h];
 
         // creating answer array
-        double[,] ans = new double[height, width];
+        double[,] ans = new double[height, m2w];
 
         for (int i = 0; i < height; i++)
             {
@@ -28,7 +31,7 @@ class MatrixMath
                 for (int j = 0; j < width; j++)
                 {
                     // filling in a2
-                    for (int k = 0; k < height; k++)
+                    for (int k = 0; k < m2h; k++)
                         a2[k] = matrix2[k, j];
                     try
                     {
