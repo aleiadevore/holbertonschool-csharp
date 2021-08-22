@@ -2,6 +2,7 @@
 
 class VectorMath
 {
+    ///<summary>Determines magnitude of 2d and 3d vectors<summary>///
     public static double Magnitude(double[] vector)
     {
         double left = 0.00;
