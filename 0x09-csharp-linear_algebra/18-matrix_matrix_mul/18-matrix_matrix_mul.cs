@@ -8,8 +8,6 @@ class MatrixMath
         int height = matrix1.GetLength(0);
         int width = matrix1.GetLength(1);
 
-        if (matrix2.GetLength(0) != height || matrix2.GetLength(1) != width)
-            return new double[,] {{-1}};
         if (height < 2 || height > 3 || width < 2 || width > 3)
             return new double[,] {{-1}};
 
