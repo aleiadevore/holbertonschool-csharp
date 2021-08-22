@@ -19,6 +19,18 @@ class MatrixMath
         deg[1, 0] = Math.Sin(angle) * -1;
         deg[0, 1] = Math.Sin(angle);
 
+        for (int i = 0; i < deg.GetLength(0); i++)
+        {
+            for (int j = 0; j < deg.GetLength(1); j++)
+            {
+                Console.Write(deg[i, j]);
+                if (j != deg.GetLength(1) - 1)
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine();
+
         return Multiply(matrix, deg);
     }
 
@@ -73,11 +85,16 @@ class MatrixMath
         if (vector1.Length != vector2.Length)
             throw new InvalidOperationException("Wrong length");
 
-        double deg = 0;
+        double ans = 0;
 
         for (int i = 0; i < vector1.Length; i++)
-            deg += vector1[i] * vector2[i];
+            ans += vector1[i] * vector2[i];
 
-        return Math.Round(deg, 2);
+        double after = Math.Round(ans, 2);
+        if (ans > 0 && ans > after)
+            after += 0.01;
+        if (ans < 0 && ans < after)
+            after -= 0.01;
+        return after;
     }
 }
