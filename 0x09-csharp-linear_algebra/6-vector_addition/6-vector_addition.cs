@@ -12,10 +12,10 @@ class VectorMath
 
         double[] ans = new double[vector1.Length];
 
-        for (int i = 0; i > vector1.Length; i++)
+        for (int i = 0; i < vector1.Length; i++)
         {
             double n = vector1[i] + vector2[i];
-            ans[i] = Math.Round(n, 2);
+            ans[i] = n;
         }
 
         return ans;
