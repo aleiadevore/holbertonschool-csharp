@@ -8,7 +8,7 @@ class MatrixMath
         int height = matrix1.GetLength(0);
         int width = matrix1.GetLength(1);
 
-        if (height < 2 || height > 3 || width < 2 || width > 3)
+        if (height < 2 || height > 3)
             return new double[,] {{-1}};
 
         // make array of row in matrix1
