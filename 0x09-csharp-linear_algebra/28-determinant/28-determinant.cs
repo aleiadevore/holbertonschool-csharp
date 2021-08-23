@@ -25,8 +25,12 @@ class MatrixMath
     }
 
     ///<summary>Helper function for 3D determinates</summary>
-    public static double Det3D(double[,] matrix)
+    public static double Det3D(double[,] m)
     {
-        return 0;
+        double sub1 = m[1, 1] * m[2, 2] - m[1, 2] * m[2, 1];
+        double sub2 = m[1, 0] * m[2, 2] - m[1, 2] * m[2, 0];
+        double sub3 = m[1, 0] * m[2, 1] - m[1, 1] * m[2, 0];
+
+        return m[0,0] * sub1 - m[0,1] * sub2 + m[0,2] * sub3;
     }
 }
