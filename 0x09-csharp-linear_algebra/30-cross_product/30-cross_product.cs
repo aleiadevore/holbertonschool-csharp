@@ -1,6 +1,6 @@
 ﻿using System;
 
-class MatrixMath
+class VectorMath
 {
     ///<summary>Returns cross product of two 3D vectors</summary>
     public static double[] CrossProduct(double[] vector1, double[] vector2)
