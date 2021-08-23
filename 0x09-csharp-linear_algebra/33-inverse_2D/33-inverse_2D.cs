@@ -36,7 +36,7 @@ class MatrixMath
         for (int i = 0; i < Height; i++)
         {
             for (int j = 0; j < Width; j++)
-                ans[i, j] = matrix[i, j] * scalar;
+                ans[i, j] = Math.Round(matrix[i, j] * scalar, 2);
         }
 
         return ans;
