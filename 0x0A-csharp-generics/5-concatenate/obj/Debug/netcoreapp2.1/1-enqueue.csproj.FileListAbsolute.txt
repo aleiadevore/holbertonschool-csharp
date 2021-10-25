@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/bin/Debug/netcoreapp2.1/1-enqueue.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/1-enqueue/obj/Debug/netcoreapp2.1/1-enqueue.genruntimeconfig.cache
