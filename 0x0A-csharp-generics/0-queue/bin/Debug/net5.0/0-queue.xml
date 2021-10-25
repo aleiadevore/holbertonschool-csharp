@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>0-queue</name>
+    </assembly>
+    <members>
+        <member name="T:Queue`1">
+            <summary>Creates generic queue</summary>
+        </member>
+        <member name="M:Queue`1.CheckType">
+            <summary>Creates method to check type of Queue</summary>
+        </member>
+    </members>
+</doc>
