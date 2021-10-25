@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/bin/Debug/netcoreapp2.1/4-print.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0A-csharp-generics/4-print/obj/Debug/netcoreapp2.1/4-print.genruntimeconfig.cache

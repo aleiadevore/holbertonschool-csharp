@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>1-enqueue</name>
+    </assembly>
+    <members>
+        <member name="T:Queue`1">
+            <summary>Creates generic queue</summary>
+        </member>
+        <member name="M:Queue`1.CheckType">
+            <summary>Creates method to check type of Queue</summary>
+        </member>
+        <member name="T:Queue`1.Node">
+            <summary>Creates a new node for a Queue of type T</summary>
+        </member>
+        <member name="F:Queue`1.Node.value">
+            <summary>Value to put into node</summary>
+        </member>
+        <member name="F:Queue`1.Node.next">
+            <summary>Next element in queue</summary>
+        </member>
+        <member name="M:Queue`1.Node.#ctor(`0)">
+            <summary>Constructor, takes value for new node and sets it</summary>
+        </member>
+        <member name="M:Queue`1.Enqueue(`0)">
+            <summary>Adds node to the end of queue</summary>
+        </member>
+        <member name="M:Queue`1.Count">
+            <summary>Returns number of nodes</summary>
+        </member>
+    </members>
+</doc>
