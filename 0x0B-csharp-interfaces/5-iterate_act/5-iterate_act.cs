@@ -125,11 +125,13 @@ public class RoomObjects
     {
         foreach (Base obj in roomObjects)
         {
-            if (type == typeof(IInteractive) && typeof(IInteractive).IsAssignableFrom(obj.GetType()))
+            if (type.IsAssignableFrom(obj.GetType()) == false)
+                continue;
+            if (type == typeof(IInteractive))
                 ((IInteractive)obj).Interact();
-            if (type == typeof(IBreakable) && typeof(IBreakable).IsAssignableFrom(obj.GetType()))
+            if (type == typeof(IBreakable))
                 ((IBreakable)obj).Break();
-            if (type == typeof(ICollectable) && typeof(ICollectable).IsAssignableFrom(obj.GetType()))
+            if (type == typeof(ICollectable))
                 ((ICollectable)obj).Collect();
         }
     }
