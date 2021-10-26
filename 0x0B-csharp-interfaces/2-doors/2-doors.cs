@@ -35,7 +35,7 @@ public abstract class Base
 public class Door : Base, IInteractive
 {
     ///<summary>Door constructor</summary>
-    public Door( string Name)
+    public Door( string Name="Door")
     {
         name = Name;
     }
