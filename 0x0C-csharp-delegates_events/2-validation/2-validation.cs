@@ -42,6 +42,7 @@ public class Player
         ValidateHP(hp + heal);
     }
 
+    ///<summary>Validates and sets HP</summary>
     public void ValidateHP(float newHp)
     {
         if (newHp < 0)
