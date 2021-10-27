@@ -30,7 +30,7 @@ public class Player
         if (damage < 0)
             damage = 0;
         Console.WriteLine($"{this.name} takes {damage} damage!");
-        this.hp -= damage;
+        ValidateHP(hp -damage);
     }
 
     ///<summary>Handles healing</summary>
@@ -39,7 +39,16 @@ public class Player
         if (heal < 0)
             heal = 0;
         Console.WriteLine($"{this.name} heals {heal} HP!");
-        this.hp += heal;
+        ValidateHP(hp + heal);
+    }
+
+    public void ValidateHP(float newHp)
+    {
+        if (newHp < 0)
+            newHp = 0;
+        else if (newHp > this.maxHp)
+            newHp = this.maxHp;
+        this.hp = newHp;
     }
 
     ///<summary>Prints health</summary>
