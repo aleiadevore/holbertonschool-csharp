@@ -8,7 +8,7 @@ public class Player
     private float hp;
 
     ///<summary>Event handler for checking HP</summary>
-    public EventHandler<CurrentHPArgs> HPCheck;
+    public event EventHandler<CurrentHPArgs> HPCheck;
     private string status;
 
     ///<summary>Constructs Player</summary>
@@ -82,7 +82,7 @@ public class Player
 
     private void CheckStatus(object sender, CurrentHPArgs e)
     {
-        float hp = e.currentHP;
+        float hp = e.currentHp;
         if (hp == maxHp)
             this.status = $"{name} is in perfect health!";
         else if (hp >= maxHp * .5)
@@ -115,11 +115,11 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 public class CurrentHPArgs : EventArgs
 {
     ///<summary>Current hp</summary>
-    public readonly float currentHP;
+    public readonly float currentHp;
 
     ///<summary>CurrentHPArgs Constructor</summary>
     public CurrentHPArgs(float newHP)
     {
-        this.currentHP = newHP;
+        this.currentHp = newHP;
     }
 }
