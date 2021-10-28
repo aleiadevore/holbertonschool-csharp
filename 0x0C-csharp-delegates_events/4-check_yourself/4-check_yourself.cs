@@ -8,7 +8,7 @@ public class Player
     private float hp;
 
     ///<summary>Event handler for checking HP</summary>
-    public event EventHandler<CurrentHPArgs> HPCheck;
+    public EventHandler<CurrentHPArgs> HPCheck;
     private string status;
 
     ///<summary>Constructs Player</summary>
@@ -115,9 +115,9 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 public class CurrentHPArgs : EventArgs
 {
     ///<summary>Current hp</summary>
-    public float currentHP { get; }
+    public readonly float currentHP;
 
-    ///<summary>Gets current HP</summary>
+    ///<summary>CurrentHPArgs Constructor</summary>
     public CurrentHPArgs(float newHP)
     {
         this.currentHP = newHP;
