@@ -112,7 +112,7 @@ public enum Modifier {
 public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 ///<summary>Gets current HP</summary>
-class CurrentHPArgs : EventArgs
+public class CurrentHPArgs : EventArgs
 {
     ///<summary>Current hp</summary>
     public readonly float currentHP;
