@@ -28,24 +28,36 @@ public class Player
     }
 
     ///<summary>Delegate for health calculations</summary>
-    public delegate float CalculateHealth(float fl);
+    public delegate void CalculateHealth(float fl);
 
     ///<summary>Handles damage</summary>
     public void TakeDamage(float damage)
     {
         if (damage < 0)
+        {
             damage = 0;
-        Console.WriteLine($"{this.name} takes {damage} damage!");
-        ValidateHP(hp -damage);
+            Console.WriteLine($"{this.name} takes {damage} damage!");
+        }
+        else
+        {
+            Console.WriteLine($"{this.name} takes {damage} damage!");
+            ValidateHP(hp - damage);
+        }
     }
 
     ///<summary>Handles healing</summary>
     public void HealDamage(float heal)
     {
         if (heal < 0)
+        {
             heal = 0;
-        Console.WriteLine($"{this.name} heals {heal} HP!");
-        ValidateHP(hp + heal);
+            Console.WriteLine($"{this.name} heals {heal} HP!");
+        }
+        else
+        {
+            Console.WriteLine($"{this.name} heals {heal} HP!");
+            ValidateHP(hp + heal);
+        }
     }
 
     ///<summary>Validates and sets HP</summary>
@@ -53,11 +65,11 @@ public class Player
     {
         if (newHp < 0)
             newHp = 0;
-        else if (newHp > this.maxHp)
-            newHp = this.maxHp;
+        else if (newHp > maxHp)
+            newHp = maxHp;
         this.hp = newHp;
         // sender = this, CurrentHPArgs e = new CurrentHPArgs of hp
-        OnCheckStatus(this, new CurrentHPArgs(hp));
+        OnCheckStatus(this, new CurrentHPArgs(this.hp));
     }
 
     ///<summary>Prints health</summary>
@@ -73,7 +85,7 @@ public class Player
         // Can compare to enum.value or
         // Can cast as int and compare to index
         if (modifier == Modifier.Weak)
-            return baseValue * 0.5f;
+            return baseValue / 2;
         else if ((int) modifier == 2)
             return baseValue * 1.5f;
         else
@@ -85,9 +97,9 @@ public class Player
         float hp = e.currentHP;
         if (hp == maxHp)
             this.status = $"{name} is in perfect health!";
-        else if (hp >= maxHp * .5)
+        else if (hp >= maxHp * .5f)
             this.status = $"{name} is doing well!";
-        else if (hp >= maxHp * .25)
+        else if (hp >= maxHp * .25f)
             this.status = $"{name} isn't doing too great...";
         else if (hp > 0)
             this.status = $"{name} needs help!";
@@ -114,9 +126,9 @@ public class Player
 
     public void OnCheckStatus(object sender, CurrentHPArgs e)
     {
-        if (e.currentHP < maxHp * .25f)
-            HPCheck += HPValueWarning;
-        HPCheck(this, e);
+        if (e.currentHP < this.maxHp * .25f)
+            this.HPCheck += HPValueWarning;
+        this.HPCheck(this, e);
     }
 }
 
