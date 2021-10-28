@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>0-universal_health</name>
+    </assembly>
+    <members>
+        <member name="T:Player">
+            <summary>Creates player</summary>
+        </member>
+        <member name="M:Player.#ctor(System.String,System.Single)">
+            <summary>Constructs Player</summary>
+        </member>
+        <member name="M:Player.PrintHealth">
+            <summary>Prints health</summary>
+        </member>
+    </members>
+</doc>

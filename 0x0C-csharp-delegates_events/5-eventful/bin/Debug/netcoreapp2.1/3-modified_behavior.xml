@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>3-modified_behavior</name>
+    </assembly>
+    <members>
+        <member name="T:Player">
+            <summary>Creates player</summary>
+        </member>
+        <member name="M:Player.#ctor(System.String,System.Single)">
+            <summary>Constructs Player</summary>
+        </member>
+        <member name="T:Player.CalculateHealth">
+            <summary>Delegate for health calculations</summary>
+        </member>
+        <member name="M:Player.TakeDamage(System.Single)">
+            <summary>Handles damage</summary>
+        </member>
+        <member name="M:Player.HealDamage(System.Single)">
+            <summary>Handles healing</summary>
+        </member>
+        <member name="M:Player.ValidateHP(System.Single)">
+            <summary>Validates and sets HP</summary>
+        </member>
+        <member name="M:Player.PrintHealth">
+            <summary>Prints health</summary>
+        </member>
+        <member name="M:Player.ApplyModifier(System.Single,Modifier)">
+            <summary>Applies modifier to HP</summary>
+        </member>
+        <member name="T:Modifier">
+            <summary>Defines modifiers</summary>
+        </member>
+        <member name="F:Modifier.Weak">
+            <summary>Weakest</summary>
+        </member>
+        <member name="F:Modifier.Base">
+            <summary>Middle</summary>
+        </member>
+        <member name="F:Modifier.Strong">
+            <summary>Good coffee</summary>
+        </member>
+        <member name="T:CalculateModifier">
+            <summary>Modifier Calc delegation</summary>
+        </member>
+    </members>
+</doc>

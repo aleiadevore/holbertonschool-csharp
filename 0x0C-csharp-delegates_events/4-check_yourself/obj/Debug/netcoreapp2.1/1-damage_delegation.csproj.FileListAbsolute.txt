@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/bin/Debug/netcoreapp2.1/1-damage_delegation.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/1-damage_delegation/obj/Debug/netcoreapp2.1/1-damage_delegation.genruntimeconfig.cache

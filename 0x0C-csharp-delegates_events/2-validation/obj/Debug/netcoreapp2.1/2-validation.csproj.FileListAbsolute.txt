@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/bin/Debug/netcoreapp2.1/2-validation.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/2-validation/obj/Debug/netcoreapp2.1/2-validation.genruntimeconfig.cache

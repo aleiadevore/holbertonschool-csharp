@@ -124,6 +124,7 @@ public class Player
         Console.ResetColor();
     }
 
+    ///<summary>Checks if health is low</summary>
     public void OnCheckStatus(object sender, CurrentHPArgs e)
     {
         if (e.currentHP < this.maxHp * .25f)

@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/bin/Debug/netcoreapp2.1/5-eventful.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/5-eventful/obj/Debug/netcoreapp2.1/5-eventful.genruntimeconfig.cache

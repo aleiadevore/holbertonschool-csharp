@@ -1,0 +1,14 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.xml
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/bin/Debug/netcoreapp2.1/0-universal_health.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0C-csharp-delegates_events/0-universal_health/obj/Debug/netcoreapp2.1/0-universal_health.genruntimeconfig.cache
