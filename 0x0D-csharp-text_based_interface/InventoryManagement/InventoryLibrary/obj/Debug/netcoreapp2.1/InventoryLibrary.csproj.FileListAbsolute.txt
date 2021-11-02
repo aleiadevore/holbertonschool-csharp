@@ -1,0 +1,5 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryLibrary/obj/Debug/netcoreapp2.1/InventoryLibrary.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryLibrary/obj/Debug/netcoreapp2.1/InventoryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryLibrary/obj/Debug/netcoreapp2.1/InventoryLibrary.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryLibrary/obj/Debug/netcoreapp2.1/InventoryLibrary.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryLibrary/obj/Debug/netcoreapp2.1/InventoryLibrary.csproj.CoreCompileInputs.cache

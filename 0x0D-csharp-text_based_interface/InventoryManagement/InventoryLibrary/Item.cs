@@ -9,10 +9,11 @@ namespace InventoryLibrary
         public float? price;
         public List<string> tags;
 
-        public Item(string name, string description=null, List<string> tags=null, float? price)
+        public Item(string name, float? price, string description = null, List<string> tags = null)
         {
             this.name = name;
             this.description = description;
+            this.tags = tags;
             // TODO: Go back and limit to 2 decimal places
             this.price = price;
         }

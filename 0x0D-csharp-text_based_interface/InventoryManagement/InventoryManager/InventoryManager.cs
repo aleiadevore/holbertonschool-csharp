@@ -4,42 +4,75 @@ using System.Collections.Generic;
 
 class InventoryManager
 {
-    static void Main(string[] args)
+    public Dictionary<string, BaseClass> objects;
+
+    public InventoryManager()
     {
         JSONStorage StoreManager = new JSONStorage();
+        try
+        {
+            StoreManager.Load();
+            this.objects = StoreManager.objects;
+        }
+        catch
+        {
+            this.objects = null;
+        }
+    }
 
-        StoreManager.Load();
+    public List<string> classes = new List<string>{
+        "BaseClass",
+        "Item",
+        "Inventory"
+        };
 
+    static void Main(string[] args)
+    {
+        while (true)
+            Delimate();
+    }
+
+    /// <summary>
+    /// Delimates user input and sends to appropriate method
+    /// </summary>
+    public static void Delimate()
+    {
         //TODO: Print an initial prompt with the available commands and their usage.
+        Console.WriteLine("Prompt");
 
-        string input = Console.ReadLine();
-
-        //TODO: remove casing (should not be case sensitive)
+        string input = Console.ReadLine().ToLower();
 
         // Seperate user input by spaces
         string[] words = input.Split(' ');
+        InventoryManager manager = new InventoryManager();
 
         // Use switch to send to different methods
         switch (words[0])
         {
-            case "ClassNames":
+            case "classNames":
+                manager.ClassNames();
                 return;
-            case "All":
+            case "all":
                 // TODO: Handle if classname given in words[1]
                 return;
-            case "Create":
+            case "create":
+                if (words.Length == 2)
+                    manager.Create(words[1]);
+                else
+                    Console.WriteLine("Usage: Create <ClassName>");
                 return;
-            case "Show":
+            case "show":
                 return;
-            case "Update":
+            case "update":
                 return;
-            case "Delete":
+            case "delete":
                 return;
-            case "Exit":
+            case "exit":
+                manager.Exit();
                 return;
         }
 
-        //TODO: When a command is completed without error, print the initial prompt with command list again
+    //TODO: When a command is completed without error, print the initial prompt with command list again
     }
 
     /// <summary>
@@ -47,21 +80,29 @@ class InventoryManager
     /// </summary>
     public void ClassNames()
     {
-
+        foreach (string key in this.objects.Keys)
+            Console.WriteLine(key.Split('.')[0]);
     }
 
     /// <summary>
     /// Print all objects
     /// </summary>
-    public void All()
+    public void All(string ClassName)
     {
-        //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
+        if (classes.Contains(ClassName) == false)
+        {
+            Console.WriteLine($"{ClassName} is not a valid object type");
+            return;
+        }
+
+        foreach (string key in objects.Keys)
+            Console.WriteLine(key.Split('.')[0]);
     }
 
     /// <summary>
     /// Create and save a new object of ClassName
     /// </summary>
-    public void Create()
+    public void Create(string ClassName)
     {
         //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
     }
@@ -69,7 +110,7 @@ class InventoryManager
     /// <summary>
     /// Print the string representation of the requested object
     /// </summary>
-    public void Show()
+    public void Show(string ClassName, string id)
     {
         //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
         //TODO: If id is invalid, print: Object<id> could not be found
@@ -78,7 +119,7 @@ class InventoryManager
     /// <summary>
     /// Update the properties of the given object
     /// </summary>
-    public void Update()
+    public void Update(string ClassName, string id)
     {
         //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
         //TODO: If id is invalid, print: Object<id> could not be found
@@ -87,7 +128,7 @@ class InventoryManager
     /// <summary>
     /// Delete the given object from the JSONStorage
     /// </summary>
-    public void Delete()
+    public void Delete(string ClassName, string id)
     {
         //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
         //TODO: If id is invalid, print: Object<id> could not be found
@@ -98,6 +139,6 @@ class InventoryManager
     /// </summary>
     public void Exit()
     {
-
+        System.Environment.Exit(1);
     }
 }

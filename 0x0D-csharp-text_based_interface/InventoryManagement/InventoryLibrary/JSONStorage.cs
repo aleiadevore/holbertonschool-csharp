@@ -11,7 +11,7 @@ namespace InventoryLibrary
         /// Dictionary of all BaseClass objects
         /// Key is ClassName.id
         /// </summary>
-        public Dictionary<string, BaseClass> objects;
+        public Dictionary<string, BaseClass> objects { get; set; }
 
         public JSONStorage(Dictionary<string, BaseClass> objects=null)
         {
