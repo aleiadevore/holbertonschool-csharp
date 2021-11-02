@@ -13,7 +13,7 @@ namespace InventoryLibrary
         /// </summary>
         public Dictionary<string, BaseClass> objects;
 
-        public JSONStorage(Dictionary<string, BaseClass> objects)
+        public JSONStorage(Dictionary<string, BaseClass> objects=null)
         {
             this.objects = objects;
         }
