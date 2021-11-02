@@ -1,18 +1,23 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="InventoryLibrary/JSONStorage.cs">
+﻿<Properties StartupConfiguration="{097C2CB0-17E5-4308-BB7A-ACF8D1D831E2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="InventoryManager/InventoryManager.cs">
     <Files>
       <File FileName="InventoryLibrary/Class1.cs" Line="9" Column="38" />
       <File FileName="InventoryLibrary/Item.cs" Line="21" Column="1" />
       <File FileName="InventoryLibrary/User.cs" Line="7" Column="1" />
       <File FileName="InventoryLibrary/Inventory.cs" Line="17" Column="42" />
-      <File FileName="InventoryLibrary/JSONStorage.cs" Line="6" Column="11" />
+      <File FileName="InventoryLibrary/JSONStorage.cs" Line="59" Column="93" />
+      <File FileName="InventoryManager/Program.cs" Line="2" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="InventoryManagement" expanded="True">
-            <Node name="InventoryLibrary" expanded="True">
-              <Node name="JSONStorage.cs" selected="True" />
+            <Node name="InventoryLibrary" expanded="True" />
+            <Node name="InventoryManager" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="InventoryManager.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -20,6 +25,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.InventoryLibrary FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.InventoryManager FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
