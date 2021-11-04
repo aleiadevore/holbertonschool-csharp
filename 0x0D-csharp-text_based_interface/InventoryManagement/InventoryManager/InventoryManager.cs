@@ -5,14 +5,15 @@ using System.Collections.Generic;
 class InventoryManager
 {
     public Dictionary<string, BaseClass> objects;
+    public JSONStorage storage;
 
     public InventoryManager()
     {
-        JSONStorage StoreManager = new JSONStorage();
+        this.storage = new JSONStorage();
         try
         {
-            StoreManager.Load();
-            this.objects = StoreManager.objects;
+            storage.Load();
+            this.objects = storage.objects;
         }
         catch
         {
@@ -20,10 +21,10 @@ class InventoryManager
         }
     }
 
-    public List<string> classes = new List<string>{
-        "BaseClass",
-        "Item",
-        "Inventory"
+    public Dictionary<string, Type> classes = new Dictionary<string, Type>{
+        { "baseclass", typeof(BaseClass) },
+        { "item", typeof(Item) },
+        { "inventory", typeof(Inventory) }
         };
 
     static void Main(string[] args)
@@ -53,7 +54,10 @@ class InventoryManager
                 manager.ClassNames();
                 return;
             case "all":
-                // TODO: Handle if classname given in words[1]
+                if (words.Length == 2)
+                    manager.All(words[1]);
+                else
+                    manager.All();
                 return;
             case "create":
                 if (words.Length == 2)
@@ -87,16 +91,40 @@ class InventoryManager
     /// <summary>
     /// Print all objects
     /// </summary>
-    public void All(string ClassName)
+    public void All(string ClassName="null")
     {
-        if (classes.Contains(ClassName) == false)
+        if (objects == null)
+            return;
+
+        // If no class name given, print out every object
+        if (ClassName == null)
+        {
+            foreach (string key in objects.Keys)
+            {
+                string k = key.Split('.')[0];
+                Console.WriteLine($"{k}: {objects[key]}");
+                //TODO: Print out every object beginning with key
+            }
+        }
+
+        // Incorrect class name given
+        else if (classes.ContainsKey(ClassName) == false)
         {
             Console.WriteLine($"{ClassName} is not a valid object type");
             return;
         }
 
-        foreach (string key in objects.Keys)
-            Console.WriteLine(key.Split('.')[0]);
+        // Correct class name
+        else
+        {
+            // Filter for keys beginning in class name, print each
+            foreach (string key in objects.Keys)
+            {
+                string k = key.Split('.')[0];
+                if (k == ClassName)
+                    Console.WriteLine($"{k}: {objects[key]}");
+            }
+        }
     }
 
     /// <summary>
@@ -104,7 +132,27 @@ class InventoryManager
     /// </summary>
     public void Create(string ClassName)
     {
-        //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
+        // Incorrect class name given
+        if (classes.ContainsKey(ClassName) == false)
+        {
+            Console.WriteLine($"{ClassName} is not a valid object type");
+            return;
+        }
+
+        // Use storage.new(ClassName)
+        /*if (ClassName == "baseclass")
+            storage.New(new BaseClass());*/
+        BaseClass obj = new BaseClass();
+        if (ClassName == "baseclass")
+            storage.New(obj);
+        storage.Save();
+        storage.Load();
+        this.objects = storage.objects;
+        /*else if (ClassName == "item")
+            storage.New(new Item());
+        else if (ClassName == "inventory")
+            storage.New(new Inventory());*/
+
     }
 
     /// <summary>

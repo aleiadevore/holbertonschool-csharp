@@ -11,11 +11,10 @@ namespace InventoryLibrary
         /// Dictionary of all BaseClass objects
         /// Key is ClassName.id
         /// </summary>
-        public Dictionary<string, BaseClass> objects { get; set; }
+        public Dictionary<string, BaseClass> objects = new Dictionary<string, BaseClass>();
 
-        public JSONStorage(Dictionary<string, BaseClass> objects=null)
+        public JSONStorage()
         {
-            this.objects = objects;
         }
 
         /// <summary>
@@ -37,7 +36,15 @@ namespace InventoryLibrary
 
             string key = $"{ClassName}.{id}";
 
-            objects.Add(key, obj);
+            //objects is null for some reason
+            if (objects == null)
+                Console.WriteLine("No objects");
+            this.objects.Add(key, obj);
+            this.Save();
+            this.Load();
+            foreach(string k in objects.Keys)
+                Console.WriteLine($"{key}: {objects[key]}");
+            Console.WriteLine($"Created {key}");
         }
 
         /// <summary>
@@ -54,6 +61,7 @@ namespace InventoryLibrary
         /// </summary>
         public void Load()
         {
+            //TODO: Make sure it works when file doesn't exist
             string fileName = "storage/inventory_manager.json";
             string jsonString = File.ReadAllText(fileName);
             objects = JsonSerializer.Deserialize<Dictionary<string, BaseClass>>(jsonString);
