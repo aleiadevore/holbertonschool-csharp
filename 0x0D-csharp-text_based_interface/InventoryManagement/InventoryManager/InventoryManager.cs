@@ -73,8 +73,16 @@ class InventoryManager
                     Console.WriteLine("Usage: Show <ClassName> <id>");
                 return;
             case "update":
+                if (words.Length == 3)
+                    manager.Update(words[1], words[2]);
+                else
+                    Console.WriteLine("Usage: Update <ClassName> <id>");
                 return;
             case "delete":
+                if (words.Length == 3)
+                    manager.Delete(words[1], words[2]);
+                else
+                    Console.WriteLine("Usage: Delete <ClassName> <id>");
                 return;
             case "exit":
                 manager.Exit();
@@ -196,7 +204,25 @@ class InventoryManager
             Console.WriteLine($"{ClassName} is not a valid object type");
             return;
         }
-        //TODO: If id is invalid, print: Object<id> could not be found
+        //TODO: Figure out what we're acutally updating??
+        BaseClass obj;
+        // Find correct object
+        foreach (string key in objects.Keys)
+        {
+            string k = key.Split('.')[1];
+            string kId = key.Split('.')[2];
+            if (k.ToLower() == ClassName && kId == id)
+            {
+                obj = objects[key];
+                obj.date_updated = DateTime.Now;
+                Console.WriteLine($"Updated {objects[key].ToString()}");
+                storage.Save();
+                storage.Load();
+                return;
+            }
+        }
+        // If id is invalid, print: Object<id> could not be found
+        Console.Write($"Object {id} could not be found");
     }
 
     /// <summary>
@@ -210,7 +236,23 @@ class InventoryManager
             Console.WriteLine($"{ClassName} is not a valid object type");
             return;
         }
-        //TODO: If id is invalid, print: Object<id> could not be found
+
+        // Find and delete correct object
+        foreach (string key in objects.Keys)
+        {
+            string k = key.Split('.')[1];
+            string kId = key.Split('.')[2];
+            if (k.ToLower() == ClassName && kId == id)
+            {
+                objects.Remove(key);
+                Console.WriteLine($"Deleted {key}");
+                storage.Save();
+                storage.Load();
+                return;
+            }
+        }
+        // If id is invalid, print: Object<id> could not be found
+        Console.Write($"Object {id} could not be found");
     }
 
     /// <summary>

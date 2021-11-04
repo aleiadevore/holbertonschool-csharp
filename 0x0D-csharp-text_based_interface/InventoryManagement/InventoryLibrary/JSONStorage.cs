@@ -52,6 +52,7 @@ namespace InventoryLibrary
         /// </summary>
         public void Save()
         {
+            //TODO: Not serializing all objects correctly. (only shows id)
             string json = JsonSerializer.Serialize(objects);
             File.WriteAllText("storage/inventory_manager.json", json);
         }
