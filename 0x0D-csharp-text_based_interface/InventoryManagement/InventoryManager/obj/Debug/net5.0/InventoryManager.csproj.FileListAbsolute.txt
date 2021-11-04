@@ -15,4 +15,3 @@
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryManager/obj/Debug/net5.0/ref/InventoryManager.dll
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryManager/obj/Debug/net5.0/InventoryManager.pdb
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryManager/obj/Debug/net5.0/InventoryManager.genruntimeconfig.cache
-/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement/InventoryManager/obj/Debug/net5.0/InventoryManager.csproj.CopyComplete

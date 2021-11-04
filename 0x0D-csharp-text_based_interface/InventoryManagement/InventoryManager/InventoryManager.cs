@@ -38,8 +38,9 @@ class InventoryManager
     /// </summary>
     public static void Delimate()
     {
+        string prompt = "\nInventory Manager\n------------------------\n<ClassNames> show all ClassNames of objects\n<All> show all objects\n<All[ClassName]> show all objects of a ClassName\n<Create[ClassName]> a new object\n<Show[ClassName object_id]> an object\n<Update [ClassName object_id]> an object\n<Delete [ClassName object_id]> an object\n<Exit>\n\n$ ";
         //TODO: Print an initial prompt with the available commands and their usage.
-        Console.WriteLine("Prompt");
+        Console.Write(prompt);
 
         string input = Console.ReadLine().ToLower();
 
@@ -75,8 +76,6 @@ class InventoryManager
                 manager.Exit();
                 return;
         }
-
-    //TODO: When a command is completed without error, print the initial prompt with command list again
     }
 
     /// <summary>
@@ -91,7 +90,7 @@ class InventoryManager
     /// <summary>
     /// Print all objects
     /// </summary>
-    public void All(string ClassName="null")
+    public void All(string ClassName=null)
     {
         if (objects == null)
             return;
@@ -101,9 +100,8 @@ class InventoryManager
         {
             foreach (string key in objects.Keys)
             {
-                string k = key.Split('.')[0];
-                Console.WriteLine($"{k}: {objects[key]}");
-                //TODO: Print out every object beginning with key
+                string k = key.Split('.')[1];
+                Console.WriteLine($"{k}: {key.Split('.')[2]}");
             }
         }
 
@@ -120,9 +118,9 @@ class InventoryManager
             // Filter for keys beginning in class name, print each
             foreach (string key in objects.Keys)
             {
-                string k = key.Split('.')[0];
-                if (k == ClassName)
-                    Console.WriteLine($"{k}: {objects[key]}");
+                string k = key.Split('.')[1];
+                if (k.ToLower() == ClassName)
+                    Console.WriteLine($"{k}: {key.Split('.')[2]}");
             }
         }
     }
