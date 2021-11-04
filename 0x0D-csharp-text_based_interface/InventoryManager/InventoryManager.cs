@@ -38,8 +38,8 @@ class InventoryManager
     /// </summary>
     public static void Delimate()
     {
+        // Print an initial prompt with the available commands and their usage.
         string prompt = "\nInventory Manager\n------------------------\n<ClassNames> show all ClassNames of objects\n<All> show all objects\n<All[ClassName]> show all objects of a ClassName\n<Create[ClassName]> a new object\n<Show[ClassName object_id]> an object\n<Update [ClassName object_id]> an object\n<Delete [ClassName object_id]> an object\n<Exit>\n\n$ ";
-        //TODO: Print an initial prompt with the available commands and their usage.
         Console.Write(prompt);
 
         string input = Console.ReadLine().ToLower();
