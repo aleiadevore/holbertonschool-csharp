@@ -67,6 +67,10 @@ class InventoryManager
                     Console.WriteLine("Usage: Create <ClassName>");
                 return;
             case "show":
+                if (words.Length == 3)
+                    manager.Show(words[1], words[2]);
+                else
+                    Console.WriteLine("Usage: Show <ClassName> <id>");
                 return;
             case "update":
                 return;
@@ -158,8 +162,27 @@ class InventoryManager
     /// </summary>
     public void Show(string ClassName, string id)
     {
-        //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
-        //TODO: If id is invalid, print: Object<id> could not be found
+        // Incorrect class name given
+        if (classes.ContainsKey(ClassName) == false)
+        {
+            Console.WriteLine($"{ClassName} is not a valid object type");
+            return;
+        }
+
+        // Filter for keys beginning in class name
+        foreach (string key in objects.Keys)
+        {
+            string k = key.Split('.')[1];
+            string kId = key.Split('.')[2];
+            if (k.ToLower() == ClassName && kId == id)
+            {
+                Console.WriteLine(objects[key].ToString());
+                return;
+            }
+
+        }
+        // If id is invalid, print: Object<id> could not be found
+        Console.Write($"Object {id} could not be found");
     }
 
     /// <summary>
@@ -167,7 +190,12 @@ class InventoryManager
     /// </summary>
     public void Update(string ClassName, string id)
     {
-        //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
+        // Incorrect class name given
+        if (classes.ContainsKey(ClassName) == false)
+        {
+            Console.WriteLine($"{ClassName} is not a valid object type");
+            return;
+        }
         //TODO: If id is invalid, print: Object<id> could not be found
     }
 
@@ -176,7 +204,12 @@ class InventoryManager
     /// </summary>
     public void Delete(string ClassName, string id)
     {
-        //TODO: If ClassName is invalid, print: <ClassName> is not a valid object type
+        // Incorrect class name given
+        if (classes.ContainsKey(ClassName) == false)
+        {
+            Console.WriteLine($"{ClassName} is not a valid object type");
+            return;
+        }
         //TODO: If id is invalid, print: Object<id> could not be found
     }
 
