@@ -1,12 +1,20 @@
-# holbertonschool-csharp
+# 0x0D-csharp-text_based_interface
+## Inventory Management System
 
-## Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+## Usage:
+1. Clone repository
+2. Run console application using dotnet run --project InventoryManager/
+3. Use the following commands to manipulate inventory:
 
-### General
-- What is the meaning behind the name C#?
-- Who is the lead architect of the development team of C#?
-- What is .NET?
-- What is the difference between C# and .NET?
-- How to use VSCode and the integrated terminal to initialize, build, and run C# projects
-- How to print text and variables using Console.Write
+Inventory Manager
+-------------------------
+- \<ClassNames> show all ClassNames of objects
+- \<All> show all objects
+- <All [ClassName]> show all objects of a ClassName
+- <Create [ClassName]> a new object
+- <Show [ClassName object_id]> an object
+- <Update [ClassName object_id]> an object
+- <Delete [ClassName object_id]> an object
+- \<Exit>
+
+All inventory is stored in a JSON file titled [storage/inventory_management.json](storage/inventory_manager.json)
