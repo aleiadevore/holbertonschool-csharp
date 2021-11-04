@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sb2v0dJXcAOEqdihEPkraEquRFJQWO7NvR0mI3um/Ejgi79ZBUgUH77LmW3+tp7Hgr/vWwpV1wmGQXcwO0b9sA==",
+  "dgSpecHash": "qW54+eXJVLeaQ3METwF0gHLLVkVxxEAgYX9m0P2K/IkmfHNwRUKtrTYAnuPKnmDvMgCBBzRjv6NoAZrNdRgA5w==",
   "success": true,
   "projectFilePath": "/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/InventoryManagement.Tests.csproj",
   "expectedPackageFiles": [

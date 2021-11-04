@@ -91,7 +91,6 @@
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.AssemblyInfoInputs.cache
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.AssemblyInfo.cs
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.csproj.CoreCompileInputs.cache
-/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.csproj.CopyComplete
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.dll
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.pdb
 /Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManagement.Tests/obj/Debug/netcoreapp3.1/InventoryManagement.Tests.genruntimeconfig.cache

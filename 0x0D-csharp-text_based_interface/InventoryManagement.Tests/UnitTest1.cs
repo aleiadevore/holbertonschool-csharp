@@ -1,5 +1,7 @@
 ﻿using NUnit.Framework;
 using InventoryManagement;
+using InventoryLibrary;
+using System;
 
 namespace InventoryManagement.Tests
 {
@@ -13,7 +15,12 @@ namespace InventoryManagement.Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            JSONStorage storage = new JSONStorage();
+            InventoryLibrary.BaseClass obj = new InventoryLibrary.BaseClass();
+            storage.mode = "test";
+            storage.New(obj);
+            string s = $"InventoryLibrary.BaseClass.{obj.id}";
+            Assert.IsTrue(storage.objects.ContainsKey(s));
         }
     }
 }

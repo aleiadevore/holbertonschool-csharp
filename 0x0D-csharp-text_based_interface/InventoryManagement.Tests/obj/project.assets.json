@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Microsoft.CodeCoverage/16.5.0": {
         "type": "package",
         "compile": {
@@ -1224,6 +1224,16 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
+        }
+      },
+      "InventoryLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/InventoryLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryLibrary.dll": {}
         }
       }
     }
@@ -4564,10 +4574,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "InventoryLibrary/1.0.0": {
+      "type": "project",
+      "path": "../InventoryLibrary/InventoryLibrary.csproj",
+      "msbuildProject": "../InventoryLibrary/InventoryLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
+      "InventoryLibrary >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1"
@@ -4590,18 +4606,22 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/aleiamcnaney/.config/NuGet/NuGet.Config"
+        "/Users/aleiamcnaney/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/InventoryLibrary.csproj": {
+              "projectPath": "/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryLibrary/InventoryLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4611,8 +4631,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

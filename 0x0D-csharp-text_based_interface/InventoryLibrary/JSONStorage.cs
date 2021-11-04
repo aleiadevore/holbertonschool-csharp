@@ -12,6 +12,7 @@ namespace InventoryLibrary
         /// Key is ClassName.id
         /// </summary>
         public Dictionary<string, BaseClass> objects = new Dictionary<string, BaseClass>();
+        public string mode = "normal";
 
         public JSONStorage()
         {
@@ -54,7 +55,10 @@ namespace InventoryLibrary
         {
             //TODO: Not serializing all objects correctly. (only shows id)
             string json = JsonSerializer.Serialize(objects);
-            File.WriteAllText("storage/inventory_manager.json", json);
+            string fileName = "storage/inventory_manager.json";
+            if (mode == "test")
+                fileName = "../../../../storage/inventory_manager.json";             
+            File.WriteAllText(fileName, json);
         }
 
         /// <summary>
@@ -64,6 +68,8 @@ namespace InventoryLibrary
         {
             //TODO: Make sure it works when file doesn't exist
             string fileName = "storage/inventory_manager.json";
+            if (mode == "test")
+                fileName = "../../../../storage/inventory_manager.json"; 
             string jsonString = File.ReadAllText(fileName);
             objects = JsonSerializer.Deserialize<Dictionary<string, BaseClass>>(jsonString);
         }
