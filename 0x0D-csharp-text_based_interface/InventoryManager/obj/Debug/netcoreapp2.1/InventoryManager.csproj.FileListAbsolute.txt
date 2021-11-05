@@ -1,0 +1,16 @@
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryManager.deps.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryManager.runtimeconfig.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryManager.runtimeconfig.dev.json
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryManager.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryManager.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryLibrary.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/bin/Debug/netcoreapp2.1/InventoryLibrary.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.csproj.AssemblyReference.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.AssemblyInfoInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.AssemblyInfo.cs
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.csproj.CoreCompileInputs.cache
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.csproj.CopyComplete
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.dll
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.pdb
+/Users/aleiamcnaney/Documents/VScode/holbertonschool-csharp/0x0D-csharp-text_based_interface/InventoryManager/obj/Debug/netcoreapp2.1/InventoryManager.genruntimeconfig.cache
