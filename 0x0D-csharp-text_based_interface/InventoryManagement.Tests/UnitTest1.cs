@@ -16,7 +16,7 @@ namespace InventoryManagement.Tests
         public void Test1()
         {
             JSONStorage storage = new JSONStorage();
-            InventoryLibrary.BaseClass obj = new InventoryLibrary.BaseClass();
+            BaseClass obj = new BaseClass();
             storage.mode = "test";
             storage.New(obj);
             string s = $"BaseClass.{obj.id}";

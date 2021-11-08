@@ -16,7 +16,7 @@ namespace InventoryLibrary
 
         public JSONStorage()
         {
-            this.Load();
+            //this.Load();
         }
 
         /// <summary>
