@@ -11,7 +11,7 @@ namespace InventoryLibrary
         /// Dictionary of all BaseClass objects
         /// Key is ClassName.id
         /// </summary>
-        public Dictionary<string, BaseClass> objects = new Dictionary<string, BaseClass>();
+        public Dictionary<string, Object> objects = new Dictionary<string, Object>();
         public string mode = "normal";
 
         public JSONStorage()
@@ -21,7 +21,7 @@ namespace InventoryLibrary
         /// <summary>
         /// Return objects dictionary
         /// </summary>
-        public Dictionary<string, BaseClass> All()
+        public Dictionary<string, Object> All()
         {
             return objects;
         }
@@ -30,22 +30,26 @@ namespace InventoryLibrary
         /// Add a new key-value pair to objects
         /// </summary>
         /// <param name="obj">Object to add to objects dictionary</param>
-        public void New(BaseClass obj)
+        public void New(Object obj)
         {
             Type ClassName = obj.GetType();
-            string id = obj.id;
+            string id = ClassName.GetProperty("id").GetValue(obj).ToString();
 
-            string key = $"{ClassName}.{id}";
+            string key = $"{ClassName.Name}.{id}";
 
             //objects is null for some reason
             if (objects == null)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("No objects");
+                Console.ResetColor();
+            }
             this.objects.Add(key, obj);
             this.Save();
-            this.Load();
-            foreach(string k in objects.Keys)
-                Console.WriteLine($"{key}: {objects[key]}");
-            Console.WriteLine($"Created {key}");
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"Created {key.ToString()}");
+            Console.ResetColor();
         }
 
         /// <summary>
@@ -71,7 +75,7 @@ namespace InventoryLibrary
             if (mode == "test")
                 fileName = "../../../../storage/inventory_manager.json"; 
             string jsonString = File.ReadAllText(fileName);
-            objects = JsonSerializer.Deserialize<Dictionary<string, BaseClass>>(jsonString);
+            objects = JsonSerializer.Deserialize<Dictionary<string, Object>>(jsonString);
         }
     }
 }

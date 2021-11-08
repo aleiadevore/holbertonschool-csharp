@@ -7,8 +7,6 @@ namespace InventoryManagement.Tests
 {
     public class Tests
     {
-        static BaseClass new_base = new BaseClass();
-
         [SetUp]
         public void Setup()
         {
@@ -21,7 +19,7 @@ namespace InventoryManagement.Tests
             InventoryLibrary.BaseClass obj = new InventoryLibrary.BaseClass();
             storage.mode = "test";
             storage.New(obj);
-            string s = $"InventoryLibrary.BaseClass.{obj.id}";
+            string s = $"BaseClass.{obj.id}";
             Assert.IsTrue(storage.objects.ContainsKey(s));
 
             BaseClass BaseObj = new BaseClass();

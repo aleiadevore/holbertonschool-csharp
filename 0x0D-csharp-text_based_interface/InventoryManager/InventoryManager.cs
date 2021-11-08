@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 class InventoryManager
 {
-    public Dictionary<string, BaseClass> objects;
+    public Dictionary<string, Object> objects;
     public JSONStorage storage;
 
     public InventoryManager()
@@ -104,22 +104,42 @@ class InventoryManager
     /// </summary>
     public void All(string ClassName=null)
     {
+        string oldk;
+        string k = null;
+
         if (objects == null)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Inventory is empty.");
+            Console.ResetColor();
             return;
+        }
 
         // If no class name given, print out every object
         if (ClassName == null)
         {
             foreach (string key in objects.Keys)
             {
-                string k = key.Split('.')[1];
-                Console.WriteLine($"{k}: {key.Split('.')[2]}");
+                oldk = k;
+                k = key.Split('.')[0];
+
+                if (oldk != k)
+                {
+                    Console.BackgroundColor = ConsoleColor.DarkBlue;
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.Write(k);
+                    Console.ResetColor();
+                    Console.WriteLine();
+                }
+                else
+                    Console.WriteLine($"\t{objects[key].ToString()}");
             }
         }
 
         // Incorrect class name given
         else if (classes.ContainsKey(ClassName) == false)
         {
+            //TODO: Update all error messages to red
             Console.WriteLine($"{ClassName} is not a valid object type");
             return;
         }
@@ -127,12 +147,19 @@ class InventoryManager
         // Correct class name
         else
         {
+            // Print class name
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(ClassName);
+            Console.ResetColor();
+            Console.WriteLine();
+
             // Filter for keys beginning in class name, print each
             foreach (string key in objects.Keys)
             {
-                string k = key.Split('.')[1];
+                k = key.Split('.')[0];
                 if (k.ToLower() == ClassName)
-                    Console.WriteLine($"{k}: {key.Split('.')[2]}");
+                    Console.WriteLine($"\t{objects[key].ToString()}");
             }
         }
     }
@@ -149,12 +176,11 @@ class InventoryManager
             return;
         }
 
-        // Use storage.new(ClassName)
-        /*if (ClassName == "baseclass")
-            storage.New(new BaseClass());*/
-        BaseClass obj = new BaseClass();
         if (ClassName == "baseclass")
+        {
+            BaseClass obj = new BaseClass();
             storage.New(obj);
+        }
         storage.Save();
         storage.Load();
         this.objects = storage.objects;
@@ -205,7 +231,7 @@ class InventoryManager
             return;
         }
         //TODO: Figure out what we're acutally updating??
-        BaseClass obj;
+        Object obj;
         // Find correct object
         foreach (string key in objects.Keys)
         {
@@ -214,8 +240,13 @@ class InventoryManager
             if (k.ToLower() == ClassName && kId == id)
             {
                 obj = objects[key];
-                obj.date_updated = DateTime.Now;
+                // Find and set updated time
+                obj.GetType().GetProperty("date_updated").SetValue(obj, DateTime.Now);
+
+                // Confirm and save
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Updated {objects[key].ToString()}");
+                Console.ResetColor();
                 storage.Save();
                 storage.Load();
                 return;
