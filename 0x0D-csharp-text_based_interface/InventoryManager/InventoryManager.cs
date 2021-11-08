@@ -148,7 +148,7 @@ class InventoryManager
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write(k);
                     Console.ResetColor();
-                    Console.WriteLine();
+                    Console.WriteLine($"\n\t{objects[key].ToString()}");
                 }
                 else
                     Console.WriteLine($"\t{objects[key].ToString()}");
@@ -201,8 +201,17 @@ class InventoryManager
         switch (ClassName)
         {
             case "baseclass":
-                BaseClass obj = new BaseClass();
-                storage.New(obj);
+                BaseClass baseObj = new BaseClass();
+                storage.New(baseObj);
+                break;
+            case "user":
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("What is the name of the user?");
+                string Name = Console.ReadLine().ToLower();
+                Console.ResetColor();
+                User user = new User(Name);
+                storage.New(user);
                 break;
 
         }
