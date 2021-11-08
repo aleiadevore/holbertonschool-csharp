@@ -24,6 +24,7 @@ class InventoryManager
     public Dictionary<string, Type> classes = new Dictionary<string, Type>{
         { "baseclass", typeof(BaseClass) },
         { "item", typeof(Item) },
+        { "user", typeof(User) },
         { "inventory", typeof(Inventory) }
         };
 
@@ -48,10 +49,12 @@ class InventoryManager
         string[] words = input.Split(' ');
         InventoryManager manager = new InventoryManager();
 
+        //TODO: Update console color for prompt and usage
+
         // Use switch to send to different methods
         switch (words[0])
         {
-            case "classNames":
+            case "classnames":
                 manager.ClassNames();
                 return;
             case "all":
@@ -95,8 +98,20 @@ class InventoryManager
     /// </summary>
     public void ClassNames()
     {
+        Dictionary<string, bool> UsedClasses = new Dictionary<string, bool>{
+            { "BaseClass", false },
+            {"User", false },
+            { "Item", false },
+            { "Inventory", false }
+        };
         foreach (string key in this.objects.Keys)
-            Console.WriteLine(key.Split('.')[0]);
+        {
+            if (UsedClasses.ContainsKey(key.Split('.')[0]))
+                UsedClasses[key.Split('.')[0]] = true;
+        }
+        foreach (string key in UsedClasses.Keys)
+            if (UsedClasses[key] == true)
+                Console.WriteLine(key);
     }
 
     /// <summary>
@@ -139,8 +154,9 @@ class InventoryManager
         // Incorrect class name given
         else if (classes.ContainsKey(ClassName) == false)
         {
-            //TODO: Update all error messages to red
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ClassName} is not a valid object type");
+            Console.ResetColor();
             return;
         }
 
@@ -172,7 +188,9 @@ class InventoryManager
         // Incorrect class name given
         if (classes.ContainsKey(ClassName) == false)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ClassName} is not a valid object type");
+            Console.ResetColor();
             return;
         }
 
@@ -199,7 +217,9 @@ class InventoryManager
         // Incorrect class name given
         if (classes.ContainsKey(ClassName) == false)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ClassName} is not a valid object type");
+            Console.ResetColor();
             return;
         }
 
@@ -216,7 +236,9 @@ class InventoryManager
 
         }
         // If id is invalid, print: Object<id> could not be found
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.Write($"Object {id} could not be found");
+        Console.ResetColor();
     }
 
     /// <summary>
@@ -227,10 +249,13 @@ class InventoryManager
         // Incorrect class name given
         if (classes.ContainsKey(ClassName) == false)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ClassName} is not a valid object type");
+            Console.ResetColor();
             return;
         }
-        //TODO: Figure out what we're acutally updating??
+        //TODO: Prompt for property to update
+        //TODO: Prompt for value of property
         Object obj;
         // Find correct object
         foreach (string key in objects.Keys)
@@ -253,7 +278,9 @@ class InventoryManager
             }
         }
         // If id is invalid, print: Object<id> could not be found
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.Write($"Object {id} could not be found");
+        Console.ResetColor();
     }
 
     /// <summary>
@@ -264,7 +291,9 @@ class InventoryManager
         // Incorrect class name given
         if (classes.ContainsKey(ClassName) == false)
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"{ClassName} is not a valid object type");
+            Console.ResetColor();
             return;
         }
 
@@ -276,14 +305,18 @@ class InventoryManager
             if (k.ToLower() == ClassName && kId == id)
             {
                 objects.Remove(key);
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Deleted {key}");
+                Console.ResetColor();
                 storage.Save();
                 storage.Load();
                 return;
             }
         }
         // If id is invalid, print: Object<id> could not be found
-        Console.Write($"Object {id} could not be found");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Object {id} could not be found");
+        Console.ResetColor();
     }
 
     /// <summary>
