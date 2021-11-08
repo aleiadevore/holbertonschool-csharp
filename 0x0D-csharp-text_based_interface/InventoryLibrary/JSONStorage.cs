@@ -16,6 +16,7 @@ namespace InventoryLibrary
 
         public JSONStorage()
         {
+            this.Load();
         }
 
         /// <summary>
@@ -57,6 +58,7 @@ namespace InventoryLibrary
         /// </summary>
         public void Save()
         {
+            //TODO: Only serializing id. Why?
             string json = JsonSerializer.Serialize(objects);
             string fileName = "storage/inventory_manager.json";
             if (mode == "test")

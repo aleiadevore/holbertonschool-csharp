@@ -242,8 +242,8 @@ class InventoryManager
         // Filter for keys beginning in class name
         foreach (string key in objects.Keys)
         {
-            string k = key.Split('.')[1];
-            string kId = key.Split('.')[2];
+            string k = key.Split('.')[0];
+            string kId = key.Split('.')[1];
             if (k.ToLower() == ClassName && kId == id)
             {
                 Console.WriteLine(objects[key].ToString());
