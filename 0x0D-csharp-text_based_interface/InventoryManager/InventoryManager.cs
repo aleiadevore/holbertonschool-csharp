@@ -198,10 +198,13 @@ class InventoryManager
             return;
         }
 
-        if (ClassName == "baseclass")
+        switch (ClassName)
         {
-            BaseClass obj = new BaseClass();
-            storage.New(obj);
+            case "baseclass":
+                BaseClass obj = new BaseClass();
+                storage.New(obj);
+                break;
+
         }
         storage.Save();
         storage.Load();
