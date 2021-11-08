@@ -104,11 +104,15 @@ class InventoryManager
             { "Item", false },
             { "Inventory", false }
         };
+
+        // Setting UsedClasses to true if object type used
         foreach (string key in this.objects.Keys)
         {
             if (UsedClasses.ContainsKey(key.Split('.')[0]))
                 UsedClasses[key.Split('.')[0]] = true;
         }
+
+        // Printing only used classes
         foreach (string key in UsedClasses.Keys)
             if (UsedClasses[key] == true)
                 Console.WriteLine(key);
